@@ -1,0 +1,91 @@
+
+
+main, header{
+    width: 65%;
+    margin: auto;
+}
+header {
+    border-bottom: 5px solid gray;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    text-transform: uppercase;
+}
+
+section.blog-section {
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 3px 2px rgb(218, 212, 212);
+    border-radius: 15px;
+ 
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ui-button {
+    /* background-color: #EE7600;   */
+    background: url(../images/img06.jpg);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #808080;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 0.1em;
+    overflow: visible;
+    padding: 3px 8px;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.rounded-container {
+    border-radius: 5px; /* Adjust the value to change the roundness */
+    overflow: hidden; /* Ensure the image does not overflow beyond the rounded corners */
+    width: 200px;
+}
+
+/* Style the image */
+.rounded-container img {
+    display: block; /* Ensure the image is displayed as a block element */
+    width: 200px; /* Make the image fill the container width */
+    height: 150px; /* Maintain the aspect ratio */
+}
+
+.centered-div {
+    text-align: right;
+    vertical-align: top;
+    float: right;
+    width: 100%;
+    margin-top: 80px;
+    display: table;
+    table-layout: fixed;
+}
+
+.centered-list {
+    list-style-type: disc; /* Bullet points */
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Inline block to center list items */
+    text-align: left; /* Align text within list items to the left */
+}
+
+
