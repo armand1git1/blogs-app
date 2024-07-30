@@ -74,8 +74,9 @@ input, textarea {
     text-align: right;
     vertical-align: top;
     float: right;
-    width: 100%;
-    margin-top: 80px;
+    width: 60%;
+    margin-top: -185px;
+    margin-left: 10px;
     display: table;
     table-layout: fixed;
 }
@@ -84,6 +85,7 @@ input, textarea {
     list-style-type: disc; /* Bullet points */
     padding: 0;
     margin: 0;
+    margin-top: 15px;
     display: inline-block; /* Inline block to center list items */
     text-align: left; /* Align text within list items to the left */
 }

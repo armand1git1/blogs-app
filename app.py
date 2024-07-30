@@ -22,7 +22,23 @@ cursor.execute(query) """
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('index.html')
+    # def myblogs():
+    cursor.execute('SELECT * FROM blogs')
+    items = cursor.fetchall()
+    myblogs = list(map(lambda lst: {
+        'id': lst[0],
+        'title': lst[1],
+        'subtitle': lst[2],
+        'content': lst[3],
+        'image': lst[4]
+    }, items))
+
+    # first_blog = myblogs[0] if myblogs else None
+    # print(first_blog)
+    # return render_template('blogs.html', blogs=blogs, number=len(blogs))
+    return render_template('index.html', myblogs=myblogs, number=len(myblogs))
+    # return render_template('index.html', blog=first_blog, number=len(myblogs))
+    # return render_template('/blogs')
 
 
 @app.route('/about')
